@@ -1,0 +1,16 @@
+from random import choice
+
+def printInsult (username, age):
+    adjectives = ["wet", "big"]
+    nouns = ["turnip", "dog"]
+    if (age < 16):
+        ageAdjective = "young "
+    else:
+        ageAdjective = "old "
+    print(username + ", you are a " + ageAdjective + choice(adjectives) + " " + choice(nouns))
+
+    for testAge in range(14, 18):
+        print("age: " + str(testAge))
+
+    printInsult("Monty", testAge)
+    
